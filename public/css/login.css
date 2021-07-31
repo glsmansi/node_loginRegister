@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #fff;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.hero {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: top center;
+}
+
+.nav {
+  width: 100%;
+}
+.nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  /* margin-right: 3rem; */
+  list-style-type: none;
+  padding: 0.25rem;
+  padding-right: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  /* margin-left: 1rem; */
+  margin-top: 0;
+  border-bottom: 0.25rem solid transparent;
+  background-color: rgba(255, 255, 255);
+  border-radius: 5rem;
+  position: absolute;
+  left: 50%;
+  top: 3%;
+  transform: translate(-50%, -50%);
+}
+.nav ul li {
+  padding-left: 30px;
+}
+
+.nav ul li a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+.nav ul li a.active {
+  color: rgb(255, 0, 0);
+  text-decoration: underline;
+}
+
+.hero .container {
+  height: auto;
+  width: 35%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  border-radius: 40px;
+}
+
+.hero .form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.hero h1 {
+  text-align: center;
+  letter-spacing: 8px;
+  font-size: 3rem;
+}
+
+.hero label {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.hero input {
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  border-radius: 1rem;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.hero input:focus {
+  outline: none;
+}
+
+.hero .btn {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-color: #fff;
+}
+
+.hero .btn:hover {
+  color: #333;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.hero .footer .copy {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 253, 253);
+  color: black;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.hero .container .form .inline {
+  display: flex;
+}
+
+.hero .container .form .inline .formbtn {
+  padding-right: 10rem;
+  text-align: center;
+  padding-left: 5rem;
+}

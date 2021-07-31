@@ -1,0 +1,14 @@
+<style></style>
+
+<nav class="nav">
+  <!-- <a class="heading" href="/">Portfolio</a> -->
+  <ul>
+    <li><a class="active" href="/">Home</a></li>
+    <% if(currentUser){ %>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/register">Register</a></li>
+    <% }else{ %>
+    <li><a href="/logout">logout</a></li>
+    <% } %>
+  </ul>
+</nav>

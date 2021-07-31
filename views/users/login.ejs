@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="hero">
+      <nav class="nav">
+        <ul>
+          <li><a  href="/">Home</a></li>
+          <% if(!currentUser){ %>
+          <li><a class="active" href="/login">Login</a></li>
+          <li><a href="/register">Register</a></li>
+          <% }else{ %>
+          <li><a href="/logout">logout</a></li>
+          <% } %>
+        </ul>
+      </nav>
+      <div class="container">
+        <h1>Login</h1>
+        <form action="/login" method="POST">
+          <div class="form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" /><br />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required /><br />
+            <div class="inline">
+              <button class="btn ">Login</button>
+            </form>
+            <form action="/forgotPassword ">
+              <button class="btn formbtn">forgot password</button>
+            </form>
+            </div>
+           
+          </div>
+          
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <nav class="nav">
+        <ul>
+          <li><a class="active" href="/">Home</a></li>
+          <% if(!currentUser){ %>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Register</a></li>
+          <% }else{ %>
+          <li><a href="/logout">logout</a></li>
+          <% } %>
+        </ul>
+      </nav>
+
+      <% if(currentUser){ %>
+
+      <h1>Welcome <%= currentUser.username %></h1>
+
+      <% }else{ %>
+      <h1>Welcome</h1>
+      <% } %>
+    </div>
+  </body>
+</html>
